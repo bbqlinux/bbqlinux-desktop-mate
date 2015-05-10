@@ -1,7 +1,7 @@
 # Maintainer: Daniel Hillenbrand <codeworkx [at] bbqlinux [dot] org>
 
 pkgname=bbqlinux-desktop-mate
-pkgver=1.0.0
+pkgver=1.0.1
 pkgrel=1
 pkgdesc="BBQLinux MATE Desktop"
 arch=('any')
@@ -18,6 +18,7 @@ depends=(
 
 # Theme
 'bbqlinux-theme'
+'bbqlinux-artwork'
 
 # mate
 'caja'
@@ -66,5 +67,11 @@ depends=(
 )
 
 package() {
-    cd "$srcdir"
+    cd "$pkgdir"
+    mkdir -p etc
+    mkdir -p usr/bin
+
+    install -Dm755 "$srcdir/usr/bin/bbqlinux-gsettings.sh" usr/bin/bbqlinux-gsettings.sh
+
+    cp -R "$srcdir/etc/skel" etc/skel
 }
