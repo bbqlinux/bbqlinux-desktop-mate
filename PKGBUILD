@@ -1,7 +1,7 @@
 # Maintainer: Daniel Hillenbrand <codeworkx [at] bbqlinux [dot] org>
 
 pkgname=bbqlinux-desktop-mate
-pkgver=1.0.1
+pkgver=1.0.2
 pkgrel=1
 pkgdesc="BBQLinux MATE Desktop"
 arch=('any')
@@ -19,6 +19,7 @@ depends=(
 # Theme
 'bbqlinux-theme'
 'bbqlinux-artwork'
+'bbqlinux-config-gtk'
 
 # mate
 'caja'
