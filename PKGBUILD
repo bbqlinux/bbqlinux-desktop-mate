@@ -1,7 +1,7 @@
 # Maintainer: Daniel Hillenbrand <codeworkx [at] bbqlinux [dot] org>
 
 pkgname=bbqlinux-desktop-mate
-pkgver=1.0.2
+pkgver=1.0.3
 pkgrel=1
 pkgdesc="BBQLinux MATE Desktop"
 arch=('any')
@@ -27,7 +27,6 @@ depends=(
 'mate-backgrounds'
 'mate-control-center'
 'mate-desktop'
-'mate-dialogs'
 'mate-icon-theme'
 'mate-menus'
 'mate-notification-daemon'
@@ -36,6 +35,7 @@ depends=(
 'mate-session-manager'
 'mate-settings-daemon'
 'mate-themes'
+'mate-user-guide'
 
 # mate-extra
 'atril'
