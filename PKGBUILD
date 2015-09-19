@@ -1,7 +1,7 @@
 # Maintainer: Daniel Hillenbrand <codeworkx [at] bbqlinux [dot] org>
 
 pkgname=bbqlinux-desktop-mate
-pkgver=1.0.3
+pkgver=1.0.4
 pkgrel=1
 pkgdesc="BBQLinux MATE Desktop"
 arch=('any')
@@ -72,7 +72,7 @@ package() {
     mkdir -p etc
     mkdir -p usr/bin
 
-    install -Dm755 "$srcdir/usr/bin/bbqlinux-gsettings.sh" usr/bin/bbqlinux-gsettings.sh
+    install -Dm755 "$srcdir/usr/bin/bbqlinux-mate-settings.sh" usr/bin/bbqlinux-mate-settings.sh
 
     cp -R "$srcdir/etc/skel" etc/skel
 }

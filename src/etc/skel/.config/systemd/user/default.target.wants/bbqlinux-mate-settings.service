@@ -1,0 +1,9 @@
+[Unit]
+Description=Apply BBQLinux specific MATE settings
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bbqlinux-mate-settings.sh
+
+[Install]
+WantedBy=default.target
