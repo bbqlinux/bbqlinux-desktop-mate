@@ -1,7 +1,7 @@
 # Maintainer: Daniel Hillenbrand <codeworkx [at] bbqlinux [dot] org>
 
 pkgname=bbqlinux-desktop-mate
-pkgver=1.0.4
+pkgver=1.0.6
 pkgrel=1
 pkgdesc="BBQLinux MATE Desktop"
 arch=('any')

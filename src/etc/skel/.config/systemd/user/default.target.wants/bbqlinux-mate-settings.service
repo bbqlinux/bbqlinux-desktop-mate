@@ -1,5 +1,6 @@
 [Unit]
 Description=Apply BBQLinux specific MATE settings
+After=graphical.target
 
 [Service]
 Type=simple
