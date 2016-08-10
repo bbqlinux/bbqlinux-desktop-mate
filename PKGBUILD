@@ -1,7 +1,7 @@
 # Maintainer: Daniel Hillenbrand <codeworkx [at] bbqlinux [dot] org>
 
 pkgname=bbqlinux-desktop-mate
-pkgver=1.0.6
+pkgver=1.0.8
 pkgrel=1
 pkgdesc="BBQLinux MATE Desktop"
 arch=('any')
@@ -44,13 +44,14 @@ depends=(
 'caja-open-terminal'
 'caja-sendto'
 'caja-share'
+'caja-wallpaper'
 'engrampa'
 'eom'
 'galculator-gtk2'
 'mate-applets'
 'mate-icon-theme-faenza'
 'mate-media'
-'mate-netspeed'
+'mate-netbook'
 'mate-power-manager'
 'mate-screensaver'
 'mate-sensors-applet'
@@ -60,6 +61,10 @@ depends=(
 'mate-utils'
 'mozo'
 'pluma'
+
+# Additional
+'mate-color-manager'
+'mate-disk-utility'
 
 # keyring
 'gnome-keyring'
