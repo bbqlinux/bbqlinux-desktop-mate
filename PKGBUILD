@@ -1,7 +1,7 @@
 # Maintainer: Daniel Hillenbrand <codeworkx [at] bbqlinux [dot] org>
 
 pkgname=bbqlinux-desktop-mate
-pkgver=1.0.8
+pkgver=1.1.0
 pkgrel=1
 pkgdesc="BBQLinux MATE Desktop"
 arch=('any')
@@ -62,10 +62,6 @@ depends=(
 'mozo'
 'pluma'
 
-# Additional
-'mate-color-manager'
-'mate-disk-utility'
-
 # keyring
 'gnome-keyring'
 'libsecret'
@@ -74,10 +70,11 @@ depends=(
 
 package() {
     cd "$pkgdir"
-    mkdir -p etc
+
+    mkdir -p etc/systemd/user/default.target.wants
+    install -Dm644 "$srcdir/usr/lib/systemd/user/bbqlinux-mate-settings.service" usr/lib/systemd/user/bbqlinux-mate-settings.service
+    ln -s /usr/lib/systemd/user/bbqlinux-mate-settings.service etc/systemd/user/default.target.wants/
+
     mkdir -p usr/bin
-
     install -Dm755 "$srcdir/usr/bin/bbqlinux-mate-settings.sh" usr/bin/bbqlinux-mate-settings.sh
-
-    cp -R "$srcdir/etc/skel" etc/skel
 }
