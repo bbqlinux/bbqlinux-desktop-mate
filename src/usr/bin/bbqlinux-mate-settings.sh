@@ -10,9 +10,9 @@ then
     echo "Applying initial settings."
     # Interface
     dbus-launch gsettings set org.mate.interface gtk-theme 'BBQLinux'
-    dbus-launch gsettings set org.mate.interface icon-theme 'gnome-carbonite'
+    dbus-launch gsettings set org.mate.interface icon-theme 'Papirus'
 
-	# Marco
+    # Marco
     dbus-launch gsettings set org.mate.Marco.general theme 'BBQLinux'
 
     # Background
@@ -34,7 +34,7 @@ then
 
     touch ~/.bbqlinux/.mate-settings
     echo ${NEW_VERSION} > ~/.bbqlinux/.mate-settings
-	echo "Done."
+    echo "Done."
 fi
 
 CURRENT_VERSION=$(cat ~/.bbqlinux/.mate-settings)
@@ -45,13 +45,13 @@ then
 
     # Interface
     dbus-launch gsettings set org.mate.interface gtk-theme 'BBQLinux'
-    dbus-launch gsettings set org.mate.interface icon-theme 'gnome-carbonite'
+    dbus-launch gsettings set org.mate.interface icon-theme 'Papirus'
 
-	# Marco
+    # Marco
     dbus-launch gsettings set org.mate.Marco.general theme 'BBQLinux'
 
     echo ${NEW_VERSION} > ~/.bbqlinux/.mate-settings
-	echo "Done."
+    echo "Done."
 fi
 
 CURRENT_VERSION=$(cat ~/.bbqlinux/.mate-settings)
@@ -64,7 +64,7 @@ then
     dbus-launch gsettings set org.mate.terminal.profile:/org/mate/terminal/profiles/default/ use-theme-colors true
 
     echo ${NEW_VERSION} > ~/.bbqlinux/.mate-settings
-	echo "Done."
+    echo "Done."
 fi
 
 exit 0
