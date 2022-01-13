@@ -1,7 +1,7 @@
 # Maintainer: Daniel Hillenbrand <codeworkx [at] bbqlinux [dot] org>
 
 pkgname=bbqlinux-desktop-mate
-pkgver=1.2.0
+pkgver=1.26.0
 pkgrel=1
 pkgdesc="BBQLinux MATE Desktop"
 arch=('any')
@@ -44,10 +44,11 @@ depends=(
 'caja-sendto'
 'caja-share'
 'caja-wallpaper'
+'caja-xattr-tags'
 'engrampa'
 'eom'
-'galculator-gtk2'
 'mate-applets'
+'mate-calc'
 'mate-icon-theme-faenza'
 'mate-media'
 'mate-netbook'
